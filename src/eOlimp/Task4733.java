@@ -2,13 +2,14 @@ package eOlimp;
 
 import java.util.Scanner;
 
+//100
 public class Task4733 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String a = scanner.next();
         int one = a.charAt(0) - '0';
-        int two = a.charAt(1) - '0';
+
         if (a.length() == 1) {
             if (one % 2 == 0) {
                 System.out.println("Yes");
@@ -27,6 +28,7 @@ public class Task4733 {
         }
 
         if (a.length() == 2) {
+            int two = a.charAt(1) - '0';
             int num2R = one * 10 + two;
             if (num2R % 2 == 0) {
                 System.out.println("Yes");
